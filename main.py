@@ -200,7 +200,7 @@ def main():
     for eq_idx, de in enumerate(de_pairs, start=1):
         time_dict = timing(10000, de[0], 100, 0.2, 1, 1)
         diff_dict = accuracy(de[0], 100, 0.2, 1, 1, de[1])
-        num_iterations = len(diff_dict["Euler Method"])  # Number of error values
+        num_iterations = len(diff_dict["Euler Method"])
 
         for i in range(num_iterations):
             row = [
